@@ -1,0 +1,212 @@
+.trp-builder-platforms {
+    position: relative;
+    box-sizing: border-box;
+}
+
+/*.trp-platform-google .trp-builder-top {
+    color: #e7711b;
+}
+
+.trp-platform-facebook .trp-builder-top {
+    color: #3c5b9b;
+}
+
+.trp-platform-yelp .trp-builder-top {
+    color: #d32323;
+}*/
+
+.trp-builder-top {
+    padding: 10px;
+    color: #23282d;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4em;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fafafa url('../img/button-down-black.svg') no-repeat right;
+}
+
+.trp-builder-top:hover {
+    border-color: #999;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.trp-builder-inside {
+    border-top: none;
+    padding: 10px 10px 0;
+    line-height: 16px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.trp-builder-inside .trp-builder-option {
+    margin: 10px 0 0;
+    position: relative;
+}
+
+.trp-builder-inside .trp-builder-option:first-child {
+    margin-top: 0;
+}
+
+.trp-builder-inside .trp-builder-option:last-child {
+    margin-bottom: 10px;
+}
+
+.trp-builder-inside input[type="text"],
+.trp-builder-inside select,
+.trp-builder-inside button,
+.trp-builder-inside textarea {
+    width: 100%;
+    clear: both;
+    border-spacing: 0;
+}
+
+.trp-builder-inside pre {
+    margin: 0;
+    color: #b73434;
+    font-size: 10px;
+    line-height: 16px;
+    padding: 4px;
+    background: #fff;
+    overflow: auto;
+}
+
+.trp-builder-connect {
+    margin: 0 0 10px;
+    padding: 6px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: #eee;
+}
+
+.trp-builder-connect.trp-connect-google {
+    background: #ef6c00;
+}
+
+.trp-builder-connect.trp-connect-facebook {
+    background: #3c5b9b;
+}
+
+.trp-builder-connect.trp-connect-tripadvisor {
+    background: #3eca77;
+}
+
+.trp-builder-connect.trp-connect-yelp {
+    margin-bottom: 0;
+    background: #d32323;
+}
+
+.trp-builder-connect.trp-connect-google + div,
+.trp-builder-connect.trp-connect-yelp + div {
+    margin-top: 10px;
+}
+
+.trp-connections {
+    padding-bottom: 10px;
+}
+
+.trp-connection {
+    cursor: move;
+}
+
+.trp-connect-business {
+    color: #333;
+    text-align: left;
+    margin: 10px 0 0;
+    border: 1px solid #ccc;
+    background: #fafafa url(../img/button-down-black.svg) no-repeat right;
+}
+
+.trp-connect-business + div {
+    padding: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    border-top: 0;
+}
+
+.trp-connect-select {
+    display: none!important;
+}
+
+.trp-platform-multiple .trp-connect-select {
+    display: inline-block!important;
+}
+
+.trp-connect-photo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.trp-connect-photo-change {
+    margin-right: 10px
+}
+
+.trp-connect-error {
+  color: #e60909;
+  font-size: 13px;
+}
+
+.trp-connection-checkbox {
+    display: none;
+    margin: 10px 0 0 6px;
+}
+
+.trp-platform-multiple .trp-connection-checkbox {
+    display: block;
+}
+
+.trp-quest {
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    width: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background: #eee;
+}
+
+.trp-quest.trp-quest-top {
+    top: 0;
+}
+
+.trp-quest.trp-quest-top22 {
+    top: 22px;
+}
+
+.trp-quest:hover {
+    border: 1px solid #999;
+}
+
+.trp-quest-help {
+    display: none;
+    margin: 0 0 10px 0;
+    padding: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    background: #eee;
+}
+
+.trp-well {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    border: 1px solid #d9d9d9;
+    background: #f1f1f1;
+}
+
+#rating_temp {
+    height: 260px;
+    font-size: 12px;
+    word-break: break-all;
+}

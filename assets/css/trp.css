@@ -1,0 +1,453 @@
+/*-------------------------------- reset --------------------------------*/
+.trp {
+    box-sizing: border-box!important;
+    font-size: 16px!important;
+}
+
+.trp *,
+.trp *:before,
+.trp *:after {
+    box-sizing: inherit!important;
+}
+
+.trp a,
+.trp p,
+.trp div,
+.trp span,
+.trp button {
+    margin: 0;
+    padding: 0;
+    border: 0!important;
+    font-size: 100%!important;
+    font: inherit!important;
+    vertical-align: baseline!important;
+}
+
+.trp a {
+    box-shadow: none!important;
+}
+
+.trp ol,
+.trp ul {
+    list-style: none!important;
+}
+
+.trp img {
+    max-width: 100%!important;
+    height: auto!important;
+}
+
+/*-------------------------------- common --------------------------------*/
+.trp .trp-hr {
+    margin: 10px 0!important;
+    border-top: 1px solid #ddd!important;
+    border-bottom: 1px solid #fff!important;
+}
+
+.trp .trp-hr2 {
+    margin: 15px 0!important;
+    border-top: 1px solid #ddd!important;
+    border-bottom: 1px solid #fff!important;
+}
+
+.trp .trp-hr-fancy {
+    border: 0!important;
+    height: 1px!important;
+    margin: 20px 0!important;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%)!important;
+}
+
+.trp .trp-more,
+.trp .trp-hide {
+    display: none!important;
+}
+
+.trp .trp-more-toggle {
+    color: #136aaf!important;
+    cursor: pointer!important;
+    text-decoration: underline!important;
+}
+
+.trp .trp-url {
+    display: block;
+    margin: 10px 0!important;
+    color: #2c7cff!important;
+    text-align: center!important;
+    box-shadow: none!important;
+    outline: none!important;
+}
+
+.trp .trp-trim {
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+}
+
+.trp .trp-star {
+    padding: 0 4px 0 0!important;
+    line-height: 22px!important;
+}
+
+.trp .trp-stars {
+    display: inline-block!important;
+}
+
+.trp .trp-stars svg {
+    display: inline-block!important;
+    width: 18px!important;
+    height: 18px!important;
+    margin: 0 4px 0 0!important;
+    vertical-align: middle!important;
+}
+
+.trp svg.yrw-rating {
+    width: 106px!important;
+    height: 20px!important;
+}
+
+.trp .trp-row {
+    -webkit-box-align: center!important;
+    -webkit-align-items: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+.trp .trp-row.trp-row-start {
+    -webkit-box-align: start!important;
+    -webkit-align-items: start!important;
+    -ms-flex-align: start!important;
+    align-items: start!important;
+}
+
+.trp-row .trp-row-left {
+    position: relative!important;
+    -webkit-flex-basis: auto!important;
+    -ms-flex-preferred-size: auto!important;
+    flex-basis: auto!important;
+    -webkit-flex-shrink: 0!important;
+    -ms-flex-negative: 0!important;
+    flex-shrink: 0!important;
+}
+
+.trp-row .trp-row-right {
+    -webkit-box-flex: 1!important;
+    -webkit-flex-grow: 1!important;
+    -ms-flex-positive: 1!important;
+    flex-grow: 1!important;
+    overflow: hidden!important;
+    text-align: left !important;
+    line-height: 24px!important;
+}
+
+.trp-links a,
+.trp-links a:focus {
+    display: inline-block;
+    font-size: 14px!important;
+    margin: 0 10px 0 0!important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+.trp .trp-review-avatar {
+    display: block!important;
+    width: 56px!important;
+    height: 56px!important;
+    font-style: italic!important;
+    padding: 0!important;
+    margin: 0 10px 0 0!important;
+    border-radius: 50%!important;
+    vertical-align: middle!important;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24)!important;
+}
+
+.trp .trp-review-name {
+    display: block!important;
+    font-size: 100%!important;
+    font-weight: bold!important;
+    color: #427fed!important;
+    text-decoration: none!important;
+    box-shadow: none!important;
+}
+
+.trp .trp-review-text {
+    color: #777!important;
+    line-height: 24px!important;
+    font-size: 14px!important;
+}
+
+.trp .trp-review-time {
+    display: block!important;
+    color: #999!important;
+    font-size: 13px!important;
+    text-shadow: 1px 1px 0 #fff!important;
+}
+
+.trp .trp-dark .trp-review-time {
+    text-shadow: none!important;
+}
+
+.trp .trp-review-badge {
+    top: 12px!important;
+    right: 12px!important;
+    position: absolute!important;
+    background-color: inherit!important;
+}
+
+.trp .trp-social-logo svg {
+    display: block!important;
+    width: 20px!important;
+    height: 20px!important;
+    background: transparent!important;
+    border-radius: 50%!important;
+}
+
+.trp .trp-social-logo.trp-facebook-logo svg {
+    width: 20px!important;
+    height: 20px!important;
+    padding: 2px!important;
+    background-color: #3c5b9b!important;
+}
+
+/*-------------------------------- yelp stars --------------------------------*/
+.yrw-rating {
+    fill: #cccccc;
+}
+
+.yrw-rating-05 .yrw-stars-0h,
+.yrw-rating-10 .yrw-stars-1f,
+.yrw-rating-15 .yrw-stars-1f,
+.yrw-rating-15 .yrw-stars-1h {
+    fill: #f2bd79;
+}
+
+.yrw-rating-20 .yrw-stars-1f,
+.yrw-rating-20 .yrw-stars-2f,
+.yrw-rating-25 .yrw-stars-1f,
+.yrw-rating-25 .yrw-stars-2f,
+.yrw-rating-25 .yrw-stars-2h {
+    fill: #fec011;
+}
+
+.yrw-rating-30 .yrw-stars-1f,
+.yrw-rating-30 .yrw-stars-2f,
+.yrw-rating-30 .yrw-stars-3f,
+.yrw-rating-35 .yrw-stars-1f,
+.yrw-rating-35 .yrw-stars-2f,
+.yrw-rating-35 .yrw-stars-3f,
+.yrw-rating-35 .yrw-stars-3h {
+    fill: #ff9242;
+}
+
+.yrw-rating-40 .yrw-stars-1f,
+.yrw-rating-40 .yrw-stars-2f,
+.yrw-rating-40 .yrw-stars-3f,
+.yrw-rating-40 .yrw-stars-4f,
+.yrw-rating-45 .yrw-stars-1f,
+.yrw-rating-45 .yrw-stars-2f,
+.yrw-rating-45 .yrw-stars-3f,
+.yrw-rating-45 .yrw-stars-4f,
+.yrw-rating-45 .yrw-stars-4h {
+    fill: #f15c4f;
+}
+
+.yrw-rating-50 .yrw-stars-1f,
+.yrw-rating-50 .yrw-stars-2f,
+.yrw-rating-50 .yrw-stars-3f,
+.yrw-rating-50 .yrw-stars-4f,
+.yrw-rating-50 .yrw-stars-5f {
+    fill: #d32323;
+}
+
+.yrw-rating-10 .yrw-stars-0h,
+.yrw-rating-15 .yrw-stars-0h,
+.yrw-rating-20 .yrw-stars-0h,
+.yrw-rating-20 .yrw-stars-1h,
+.yrw-rating-25 .yrw-stars-0h,
+.yrw-rating-25 .yrw-stars-1h,
+.yrw-rating-30 .yrw-stars-0h,
+.yrw-rating-30 .yrw-stars-1h,
+.yrw-rating-30 .yrw-stars-2h,
+.yrw-rating-35 .yrw-stars-0h,
+.yrw-rating-35 .yrw-stars-1h,
+.yrw-rating-35 .yrw-stars-2h,
+.yrw-rating-40 .yrw-stars-0h,
+.yrw-rating-40 .yrw-stars-1h,
+.yrw-rating-40 .yrw-stars-2h,
+.yrw-rating-40 .yrw-stars-3h,
+.yrw-rating-45 .yrw-stars-0h,
+.yrw-rating-45 .yrw-stars-1h,
+.yrw-rating-45 .yrw-stars-2h,
+.yrw-rating-45 .yrw-stars-3h,
+.yrw-rating-50 .yrw-stars-0h,
+.yrw-rating-50 .yrw-stars-1h,
+.yrw-rating-50 .yrw-stars-2h,
+.yrw-rating-50 .yrw-stars-3h,
+.yrw-rating-50 .yrw-stars-4h {
+    display: none;
+}
+
+/*-------------------------------- biz header --------------------------------*/
+.trp .trp-biz-name {
+    color: #333!important;
+    font-size: 15px!important;
+    font-weight: 600!important;
+    /*line-height: 18px!important;*/
+}
+
+.trp .trp-biz-name a {
+    text-decoration: none!important;
+}
+
+.trp .trp-biz-rating.trp-trim {
+    overflow: visible!important
+}
+
+.trp .trp-biz-rating .trp-biz-score {
+    display: inline-block!important;
+    color: #0caa41!important;
+    font-size: 18px!important;
+    font-weight: 600!important;
+    margin: 0 8px 0 0!important;
+    /*min-width: 28px !important;*/
+    vertical-align: middle!important;
+}
+
+.trp .trp-biz-rating.trp-biz-google .trp-biz-score {
+    color: #e7711b!important;
+}
+
+.trp .trp-biz-rating.trp-biz-facebook .trp-biz-score {
+    color: #3c5b9b!important;
+}
+
+.trp .trp-biz-rating.trp-biz-yelp .trp-biz-score {
+    color: #d32323!important;
+}
+
+.trp .trp-biz-based {
+    display: block!important;
+    color: #777!important;
+    font-size: 14px!important;
+    /*font-weight: 600!important;*/
+    text-align: left !important;
+    /*line-height: 18px!important;*/
+    text-shadow: 1px 1px 0 #fff!important;
+}
+
+.trp .trp-dark .trp-biz-based {
+    color: #ccc!important;
+    text-shadow: none!important;
+}
+
+.trp .trp-biz-based .trp-social-logo svg {
+    display: inline-block!important;
+    margin: 0 4px!important;
+    vertical-align: middle!important;
+}
+
+.trp .trp-biz-based .trp-biz-based-text {
+    vertical-align: middle!important;
+}
+
+/*-------------------------------- list --------------------------------*/
+.trp-list .trp-list-header {
+    margin: 0 0 15px 0!important;
+}
+
+.trp-list .trp-list-header:last-child {
+    margin: 0!important;
+}
+
+.trp-list .trp-list-reviews {
+    position: relative!important;
+    min-height: 100%!important;
+    margin: 0 auto!important;
+}
+
+.trp-list .trp-list-review {
+    margin: 0 0 15px!important;
+}
+
+.trp-list .trp-list-review:last-child {
+    margin: 0!important;
+}
+
+.trp-list .trp-review-avatar {
+    width: 50px!important;
+    height: 50px!important;
+    min-height: 50px!important;
+    max-height: 50px!important;
+}
+
+.trp-list .trp-review-name {
+    color: #427fed!important;
+    font-size: 100%!important;
+    font-weight: bold!important;
+    padding-right: 6px!important;
+    text-decoration: none!important;
+    box-shadow: none!important;
+}
+
+.trp-list .trp-review-time {
+    font-size: 13px!important;
+    line-height: unset !important;
+}
+
+.trp-list .trp-review-count,
+.trp-list .trp-google-powered,
+.trp-list .trp-facebook-powered {
+    margin: 6px 0 0!important;
+    color: #999!important;
+}
+
+.trp-list .trp-facebook-powered span {
+    color: #4080ff!important;
+    font-weight: 700!important;
+    font-size: 15px!important;
+}
+
+.trp-list .trp-review-text {
+    color: #222!important;
+    font-size: 13px!important;
+    line-height: 18px!important;
+    max-width: 100%!important;
+    overflow: hidden!important;
+    white-space: pre-wrap!important;
+}
+
+.trp-list .trp-review-badge {
+    top: auto!important;
+    bottom: -1px!important;
+    right: 9px!important;
+    background-color: #f5f5f5a1!important;
+    border-radius: 50%!important;
+}
+
+/*-------------------------------- dark --------------------------------*/
+.trp .trp-dark .trp-box {
+    background-color: #333 !important;
+}
+
+.trp .trp-dark.trp-slider .trp-box:before {
+    background-color: #333 !important;
+}
+
+.trp .trp-dark .trp-review-name {
+    color: #eee!important
+}
+
+.trp .trp-dark .trp-review-text {
+    color: #fff !important;
+}
+
+.trp .trp-dark .trp-review-time {
+    color: #ccc !important;
+}
+
+.trp .trp-dark .trp-powered {
+    color: #999!important;
+}
